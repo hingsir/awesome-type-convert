@@ -4,14 +4,17 @@
 
 * 转布尔型
 ```js
+!!''         //=> false
 !!null       //=> false
 !!undefined  //=> false
+!!NaN        //=> false
 !!0          //=> false
 !!1          //=> true
 !!-1         //=> true
 !![]         //=> true
 !!{}         //=> true
 !!window     //=> true
+!!Infinity   //=> true
 ```
 * 转字符串
 ```js
