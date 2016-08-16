@@ -41,10 +41,13 @@ if(!~arr.indexOf(4)){
 }
 !!~arr.indexOf(1) //=> true
 !!~arr.indexOf(5) //=> false
+arr.includes(1)   //=> true
+arr.includes(5)   //=> false
 ```
 * 类数组转数组
 ```js
 var arrLike = {0:'abc',1:'xyz',length:2};
 Array.prototype.slice.call(arrLike)        //=> ['abc','xyz']
+Array.from(arrLike)                        //=> ['abc','xyz']
 //常用 Array.prototype.slice.call(arguments)
 ```
